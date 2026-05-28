@@ -1,0 +1,71 @@
+name: Update traffic badges
+
+on:
+  schedule:
+    - cron: "15 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate traffic badges
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          import urllib.request
+
+          repo = os.environ["GITHUB_REPOSITORY"]
+          token = os.environ["GITHUB_TOKEN"]
+          auth_scheme = "Bearer"
+          headers = {
+              "Authorization": f"{auth_scheme} {token}",
+              "Accept": "application/vnd.github+json",
+          }
+
+          def fetch(path):
+              req = urllib.request.Request(
+                  f"https://api.github.com/repos/{repo}/{path}",
+                  headers=headers,
+              )
+              with urllib.request.urlopen(req) as resp:
+                  return json.load(resp)
+
+          clones = fetch("traffic/clones")
+          views = fetch("traffic/views")
+
+          def write_badge(path, label, count, uniques):
+              payload = {
+                  "schemaVersion": 1,
+                  "label": label,
+                  "message": f"{count} total / {uniques} unique",
+                  "color": "ff3366",
+              }
+              with open(path, "w", encoding="utf-8") as handle:
+                  json.dump(payload, handle, indent=2)
+
+          os.makedirs(".github/badges", exist_ok=True)
+          write_badge(".github/badges/clones.json", "clones (14d)", clones["count"], clones["uniques"])
+          write_badge(".github/badges/views.json", "views (14d)", views["count"], views["uniques"])
+          PY
+
+      - name: Commit badge updates
+        run: |
+          if git status --porcelain | grep .; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add .github/badges/*.json
+            git commit -m "Update traffic badges"
+            git push
+          else
+            echo "No badge changes to commit."
+          fi
