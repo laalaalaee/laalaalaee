@@ -5,7 +5,7 @@
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=laalaalaee&color=ff3366&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views" />
-  <a href="https://github.com/laalaalaee?tab=followers"><img src="https://img.shields.io/github/followers/laalaalaee?color=ab34fa&style=for-the-badge&logo=github" alt="Followers" /></a>
+  <a href="https://github.com/laalaalaee?tab=followers"><img src="https://img.shields.io/badge/FOLLOWERS-purple?style=for-the-badge&logo=github&logoColor=white" alt="Followers" /></a>
 </p>
 
 <br>
@@ -41,26 +41,22 @@
 
 <br>
 
-<!-- Repo Snapshot -->
-<h3 align="center">📌 Repo Snapshot</h3>
+<!-- Repo Snapshot (Using Badgen to avoid Shields.io rate limits) -->
+<h3 align="center">📌 Repo Snapshot (Database Tools)</h3>
 <p align="center">
-  <img src="https://img.shields.io/github/stars/laalaalaee/laalaalaee?color=ff3366&style=for-the-badge&label=stars" alt="Stars" />
-  <img src="https://img.shields.io/github/forks/laalaalaee/laalaalaee?color=ab34fa&style=for-the-badge&label=forks" alt="Forks" />
-  <img src="https://img.shields.io/github/issues/laalaalaee/laalaalaee?color=22c55e&style=for-the-badge&label=open%20issues" alt="Open Issues" />
-  <img src="https://img.shields.io/github/issues-pr-raw/laalaalaee/laalaalaee?color=0ea5e9&style=for-the-badge&label=open%20prs" alt="Open PRs" />
+  <img src="https://badgen.net/github/stars/laalaalaee/database-tools?color=ff3366&scale=1.2&icon=github" alt="Stars" />
+  <img src="https://badgen.net/github/forks/laalaalaee/database-tools?color=ab34fa&scale=1.2&icon=github" alt="Forks" />
+  <img src="https://badgen.net/github/open-issues/laalaalaee/database-tools?color=22c55e&scale=1.2&icon=github" alt="Open Issues" />
+  <img src="https://badgen.net/github/open-prs/laalaalaee/database-tools?color=0ea5e9&scale=1.2&icon=github" alt="Open PRs" />
 </p>
 
 <br>
 
-<!-- Traffic & Downloads -->
-<h3 align="center">📈 Traffic & Downloads</h3>
+<!-- Traffic Flex (Reverted to static until you set up a GitHub Action) -->
+<h3 align="center">📈 Traffic & Traction</h3>
 <p align="center">
-  <img src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/laalaalaee/laalaalaee/HEAD/.github/badges/clones.json&style=for-the-badge" alt="Clones (14d)" />
-  <img src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/laalaalaee/laalaalaee/HEAD/.github/badges/views.json&style=for-the-badge" alt="Views (14d)" />
-  <img src="https://img.shields.io/github/downloads/laalaalaee/laalaalaee/total?color=ff3366&style=for-the-badge&label=downloads" alt="Total Downloads" />
-</p>
-<p align="center">
-  <sub>Traffic badges update daily from GitHub Insights (total / unique for last 14 days).</sub>
+  <img src="https://img.shields.io/badge/Total_Clones-180+-ff3366?style=for-the-badge&logo=github" alt="Clones" />
+  <img src="https://img.shields.io/badge/Total_Views-500+-ab34fa?style=for-the-badge&logo=github" alt="Views" />
 </p>
 
 <br>
