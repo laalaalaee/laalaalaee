@@ -31,19 +31,36 @@
 <!-- Top Projects Grid -->
 <h3 align="center">🔥 Top Projects</h3>
 <p align="center">
-  <!-- Dynamic Repo 1 -->
   <a href="https://github.com/laalaalaee/database-tools">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=laalaalaee&repo=database-tools&theme=tokyonight&hide_border=true&show_owner=true&title_color=ff3366" width="48%" alt="Database Tools" />
   </a>
-  <!-- Dynamic Repo 2: Change 'YOUR_SECOND_REPO' to another repo name -->
-  <a href="https://github.com/laalaalaee/YOUR_SECOND_REPO">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=laalaalaee&repo=YOUR_SECOND_REPO&theme=tokyonight&hide_border=true&show_owner=true&title_color=ff3366" width="48%" alt="Second Repo" />
+  <a href="https://github.com/laalaalaee/laalaalaee">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=laalaalaee&repo=laalaalaee&theme=tokyonight&hide_border=true&show_owner=true&title_color=ff3366" width="48%" alt="Profile Repo" />
   </a>
 </p>
 
-<!-- The Clone Flex -->
+<br>
+
+<!-- Repo Snapshot -->
+<h3 align="center">📌 Repo Snapshot</h3>
 <p align="center">
-  <img src="https://img.shields.io/badge/database--tools_clones-180+-ff3366?style=for-the-badge&logo=github" alt="Clones Flex" />
+  <img src="https://img.shields.io/github/stars/laalaalaee/laalaalaee?color=ff3366&style=for-the-badge&label=stars" alt="Stars" />
+  <img src="https://img.shields.io/github/forks/laalaalaee/laalaalaee?color=ab34fa&style=for-the-badge&label=forks" alt="Forks" />
+  <img src="https://img.shields.io/github/issues/laalaalaee/laalaalaee?color=22c55e&style=for-the-badge&label=open%20issues" alt="Open Issues" />
+  <img src="https://img.shields.io/github/issues-pr-raw/laalaalaee/laalaalaee?color=0ea5e9&style=for-the-badge&label=open%20prs" alt="Open PRs" />
+</p>
+
+<br>
+
+<!-- Traffic & Downloads -->
+<h3 align="center">📈 Traffic & Downloads</h3>
+<p align="center">
+  <img src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/laalaalaee/laalaalaee/HEAD/.github/badges/clones.json&style=for-the-badge" alt="Clones (14d)" />
+  <img src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/laalaalaee/laalaalaee/HEAD/.github/badges/views.json&style=for-the-badge" alt="Views (14d)" />
+  <img src="https://img.shields.io/github/downloads/laalaalaee/laalaalaee/total?color=ff3366&style=for-the-badge&label=downloads" alt="Total Downloads" />
+</p>
+<p align="center">
+  <sub>Traffic badges update daily from GitHub Insights (last 14 days).</sub>
 </p>
 
 <br>
