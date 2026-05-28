@@ -26,8 +26,9 @@ jobs:
 
           repo = os.environ["GITHUB_REPOSITORY"]
           token = os.environ["GITHUB_TOKEN"]
+          auth_scheme = "Bearer"
           headers = {
-              "Authorization": f"token {token}",
+              "Authorization": f"{auth_scheme} {token}",
               "Accept": "application/vnd.github+json",
           }
 
@@ -46,11 +47,11 @@ jobs:
               payload = {
                   "schemaVersion": 1,
                   "label": label,
-                  "message": f"{count} / {uniques}",
+                  "message": f"{count} total / {uniques} unique",
                   "color": "ff3366",
               }
               with open(path, "w", encoding="utf-8") as handle:
-                  json.dump(payload, handle)
+                  json.dump(payload, handle, indent=2)
 
           os.makedirs(".github/badges", exist_ok=True)
           write_badge(".github/badges/clones.json", "clones (14d)", clones["count"], clones["uniques"])

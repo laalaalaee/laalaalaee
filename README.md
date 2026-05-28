@@ -60,7 +60,7 @@
   <img src="https://img.shields.io/github/downloads/laalaalaee/laalaalaee/total?color=ff3366&style=for-the-badge&label=downloads" alt="Total Downloads" />
 </p>
 <p align="center">
-  <sub>Traffic badges update daily from GitHub Insights (last 14 days).</sub>
+  <sub>Traffic badges update daily from GitHub Insights (total / unique for last 14 days).</sub>
 </p>
 
 <br>
