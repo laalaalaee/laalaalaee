@@ -56,8 +56,8 @@ jobs:
                   json.dump(payload, handle, indent=2)
 
           os.makedirs(".github/badges", exist_ok=True)
-          write_badge(".github/badges/clones.json", "clones (14d)", clones["count"], clones["uniques"])
-          write_badge(".github/badges/views.json", "views (14d)", views["count"], views["uniques"])
+          write_badge(".github/badges/clones.json", "Clones", clones["count"], clones["uniques"])
+          write_badge(".github/badges/views.json", "Views", views["count"], views["uniques"])
           PY
 
       - name: Commit badge updates
