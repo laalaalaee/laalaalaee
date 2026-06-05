@@ -19,7 +19,7 @@ jobs:
 
       - name: Generate traffic badges
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.TRAFFIC_TOKEN }}
         run: |
           python - <<'PY'
           import json
