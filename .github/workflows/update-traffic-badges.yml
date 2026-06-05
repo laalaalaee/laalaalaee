@@ -45,19 +45,19 @@ jobs:
           clones = fetch("traffic/clones")
           views = fetch("traffic/views")
 
-          def write_badge(path, label, count, uniques):
+          def write_badge(path, label, count):
               payload = {
                   "schemaVersion": 1,
                   "label": label,
-                  "message": f"{count} total / {uniques} unique",
+                  "message": f"{count} total",
                   "color": "ff3366",
               }
               with open(path, "w", encoding="utf-8") as handle:
                   json.dump(payload, handle, indent=2)
 
           os.makedirs(".github/badges", exist_ok=True)
-          write_badge(".github/badges/clones.json", "Clones", clones["count"], clones["uniques"])
-          write_badge(".github/badges/views.json", "Views", views["count"], views["uniques"])
+          write_badge(".github/badges/clones.json", "Clones", clones["count"])
+          write_badge(".github/badges/views.json", "Views", views["count"])
           PY
 
       - name: Commit badge updates
