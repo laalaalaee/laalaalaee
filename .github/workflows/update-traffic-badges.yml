@@ -45,19 +45,41 @@ jobs:
           clones = fetch("traffic/clones")
           views = fetch("traffic/views")
 
-          def write_badge(path, label, count):
+          def update_accumulator(path, label, api_response, key_name, default_start):
+              if os.path.exists(path):
+                  with open(path, "r", encoding="utf-8") as f:
+                      old_data = json.load(f)
+              else:
+                  old_data = {"message": f"{default_start} total", "last_timestamp": "2000-01-01T00:00:00Z"}
+                  
+              try:
+                  current_total = int(old_data.get("message", f"{default_start} total").split(" ")[0])
+              except:
+                  current_total = default_start
+                  
+              last_ts = old_data.get("last_timestamp", "2000-01-01T00:00:00Z")
+              newest_ts = last_ts
+              
+              for day in api_response.get(key_name, []):
+                  ts = day["timestamp"]
+                  if ts > last_ts:
+                      current_total += day["count"]
+                      if ts > newest_ts:
+                          newest_ts = ts
+                          
               payload = {
                   "schemaVersion": 1,
                   "label": label,
-                  "message": f"{count} total",
+                  "message": f"{current_total} total",
                   "color": "ff3366",
+                  "last_timestamp": newest_ts
               }
-              with open(path, "w", encoding="utf-8") as handle:
-                  json.dump(payload, handle, indent=2)
+              with open(path, "w", encoding="utf-8") as f:
+                  json.dump(payload, f, indent=2)
 
           os.makedirs(".github/badges", exist_ok=True)
-          write_badge(".github/badges/clones.json", "Clones", clones["count"])
-          write_badge(".github/badges/views.json", "Views", views["count"])
+          update_accumulator(".github/badges/clones.json", "Clones", clones, "clones", 180)
+          update_accumulator(".github/badges/views.json", "Views", views, "views", 500)
           PY
 
       - name: Commit badge updates
