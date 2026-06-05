@@ -23,8 +23,8 @@
 <!-- Traffic Flex (Reverted to static until you set up a GitHub Action) -->
 <h3 align="center">📈 Traffic & Traction</h3>
 <p align="center">
-  <img src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/laalaalaee/laalaalaee/main/.github/badges/clones.json&style=for-the-badge&logo=github" alt="Clones" />
-  <img src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/laalaalaee/laalaalaee/main/.github/badges/views.json&style=for-the-badge&logo=github" alt="Views" />
+  <img src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/laalaalaee/laalaalaee/main/.github/badges/clones.json&style=for-the-badge&logo=github&cache=none" alt="Clones" />
+  <img src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/laalaalaee/laalaalaee/main/.github/badges/views.json&style=for-the-badge&logo=github&cache=none" alt="Views" />
 </p>
 
 <br>
