@@ -28,34 +28,6 @@
 
 <br>
 
-<h3 align="center">📊 GitHub Stats</h3>
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=laalaalaee&show_icons=true&theme=radical&hide_border=true&bg_color=0d1117&title_color=ff3366&icon_color=ff3366&text_color=ffffff&ring_color=ff3366" alt="GitHub Stats" />
-</p>
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=laalaalaee&theme=radical&hide_border=true&background=0d1117&ring=ff3366&fire=ff3366&currStreakLabel=ff3366&sideLabels=ffffff&currStreakNum=ffffff&sideNums=ffffff&dates=888888" alt="GitHub Streak" />
-</p>
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=laalaalaee&layout=compact&theme=radical&hide_border=true&bg_color=0d1117&title_color=ff3366&text_color=ffffff&langs_count=8" alt="Top Languages" />
-</p>
-
-<br>
-
-<h3 align="center">📈 Contribution Graph</h3>
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=laalaalaee&bg_color=0d1117&color=ff3366&line=ff3366&point=ffffff&area=true&hide_border=true" alt="Contribution Graph" />
-</p>
-
-<br>
-
-<h3 align="center">📈 Traffic & Traction</h3>
-<p align="center">
-  <img src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/laalaalaee/laalaalaee/main/.github/badges/clones.json&style=for-the-badge&logo=github&cache=none" alt="Clones" />
-  <img src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/laalaalaee/laalaalaee/main/.github/badges/views.json&style=for-the-badge&logo=github&cache=none" alt="Views" />
-</p>
-
-<br>
-
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=ff3366&height=80&section=footer" />
 </p>
